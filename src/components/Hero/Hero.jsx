@@ -65,7 +65,7 @@ const Hero = ({ addToCart }) => {
             <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                 {title}
-                <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
+                <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-left text-sm to-secondary pl-2">
                   by Mridul Das
                 </p>
               </h1>
@@ -87,7 +87,7 @@ const Hero = ({ addToCart }) => {
                   className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] object-contain mx-auto"
                 />
               </div>
-              <div className="flex lg:flex-col justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+              <div className="flex lg:flex-col justify-center items-center  absolute -bottom-[-40px] lg:-right-1 bg-white rounded-full overflow-hidden ">
                 {ImageList.map((item) => (
                   <img
                     key={item.id}

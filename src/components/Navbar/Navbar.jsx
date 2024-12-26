@@ -14,7 +14,7 @@ const Menu = [
   {
     id: 2,
     name: "Best Seller",
-    link: "/#services",
+    link: "/#top-books",
   },
 ];
 
@@ -28,7 +28,7 @@ const Navbar = ({ handleOrderPopup }) => {
     localStorage.removeItem("loggedIn");
     navigate("/login");
   };
-
+  
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container py-3 sm:py-0">
